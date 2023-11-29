@@ -1,0 +1,37 @@
+<header class="header-menu">
+    <nav class="navbar-menu">
+        <div class="logo">
+            <a href="/">
+                <img src="assets/img/astronauta.png" alt="Nasa Project" class="img-logo">
+            </a>
+            <a href="/">
+                <h1>Nasa Project</h1>
+            </a>
+        </div>
+        <menu>
+            <ul class="menu">
+                <li>
+                    <a [routerLink]="['/']">Home</a>
+                </li>
+                <li>
+                    <a href="#">Mars</a>
+                </li>
+                <li>
+                    <a href="#">Earth</a>
+                </li>
+                <li>
+                    <a href="#">Day Picture</a>
+                </li>
+            </ul>
+        </menu>
+        <i id="menu-toggle" class="material-icons" (click)="isOpen()">menu</i>
+    </nav>
+    <div class="menu-mobile" [ngClass]="{'active': open}">
+        <ul class="menu-mobile-list">
+            <li>Home</li>
+            <li>Mars</li>
+            <li>Earth</li>
+            <li>Day Picture</li>
+        </ul>
+    </div>
+</header>
