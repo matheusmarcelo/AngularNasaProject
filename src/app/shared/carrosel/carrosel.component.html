@@ -1,0 +1,8 @@
+<section class="carrosel-section" *ngIf="hasImg">
+    <div class="carrosel" [style.backgroundImage]="'url(' + imageUrl + ')'">
+        <div class="descricao">
+            <h2> {{ title }}</h2>
+            <p> {{ description }}</p>
+        </div>
+    </div>
+</section>

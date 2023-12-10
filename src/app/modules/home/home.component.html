@@ -1,15 +1,7 @@
 <app-cover></app-cover>
 
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
-<p>home works!</p>
+<section class="home-content">
+    <carrosel *ngFor="let data of notices" [hasImg]="data.urlToImage" [imageUrl]="data.urlToImage" [title]="data.title"
+        [description]="data.description">
+    </carrosel>
+</section>

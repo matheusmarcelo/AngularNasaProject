@@ -1,0 +1,43 @@
+:host {
+
+    .carrosel-section {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+
+        .carrosel {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: start;
+
+            // background-image: url('../../../assets/img/img-mars.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            height: 300px;
+            width: 300px;
+            padding: 0 15px;
+
+            border-radius: 5px;
+
+            .descricao {
+                margin-bottom: 20px;
+
+                h2 {
+                    color: white;
+                    font-size: 26px;
+                    font-weight: bold;
+                }
+
+                p {
+                    color: gray;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+}
